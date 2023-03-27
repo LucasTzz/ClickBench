@@ -4,7 +4,7 @@ TRIES=3
 QUERY_NUM=1
 cat queries.sql | while read query; do
     [ -z "$HOST" ] && sync
-    [ -z "$HOST" ] && echo 3 | sudo tee /proc/sys/vm/drop_caches >/dev/null
+    [ -z "$HOST" ] && echo 3 | sudo tee ../logs >/dev/null
 
     echo -n "["
     for i in $(seq 1 $TRIES); do

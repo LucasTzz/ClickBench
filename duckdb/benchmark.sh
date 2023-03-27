@@ -2,9 +2,9 @@
 
 # Install
 
-sudo apt-get update
-sudo apt-get install -y python3-pip
-pip install duckdb psutil
+# sudo apt-get update
+# sudo apt-get install -y python3-pip
+pip3 install duckdb psutil
 
 # Load the data
 
